@@ -21,7 +21,20 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 
+// Create New Friends - takes in JSON input
+app.post("/api/friends", function(req, res) {
+  // req.body hosts is equal to the JSON post sent from the user
+  // This works because of our body-parser middleware
+  var newFriend = req.body;
 
+  newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
+
+  console.log(newcharacter);
+
+  friends.push(newFriend);
+
+  res.json(newcharacter);
+});
 
 
 
