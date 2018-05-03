@@ -7,10 +7,7 @@ var path = require("path");
 var routesApi = require("./routing/apiRoutes.js");
 var routesHtml = require("./routing/htmlRoutes.js")
 
-
 // HTML routes
-
-
 
 // Express setup
 var app = express();

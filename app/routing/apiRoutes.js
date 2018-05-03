@@ -1,3 +1,7 @@
+var friends = require("../data/friends.js");
+var app = express();
+
+
 app.get("/api/friends", function(req, res){
     res.sendFile(path.join(__dirname, "home.html"));
 });
@@ -22,7 +26,9 @@ app.post("/api/friends", function(req, res) {
 
 module.exports = function(app) {
 	
-	//Routes Go Here
+ app.get('/api/friends', function(req, res){
+     rest.json(friends);
+ })
 	
 	
 }
