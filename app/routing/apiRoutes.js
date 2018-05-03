@@ -9,11 +9,11 @@ app.post("/api/friends", function(req, res) {
   
     newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
   
-    console.log(newcharacter);
+    console.log(newFriend);
   
     friends.push(newFriend);
   
-    res.json(newcharacter);
+    res.json(newFriend);
   });
   
 

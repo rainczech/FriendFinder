@@ -4,7 +4,7 @@ var friends = [
         "name":"",
         "photo": "",
         "scores": [
-            
+
         ]
     },
 
@@ -18,9 +18,4 @@ var friends = [
 
 
 
-module.exports = function(app) {
-	
-	//Routes Go Here
-	
-	
-}
+module.exports = friends;
