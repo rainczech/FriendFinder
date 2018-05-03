@@ -4,14 +4,14 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 // API routes
+var routesHtml = require("./routing/htmlRoutes.js");
 var routesApi = require("./routing/apiRoutes.js");
-var routesHtml = require("./routing/htmlRoutes.js")
 
-// HTML routes
+
 
 // Express setup
 var app = express();
-var PORT = 5000;
+var PORT = 8080;
 
 // Data parsing
 app.use(bodyParser.urlencoded({extended: true}));
